@@ -1,59 +1,54 @@
-A-  Ce que vous visez
+# API REST du point de contrôle
 
-    Dans ce point de contrôle, vous exécuterez une série d'instructions guidées pour créer une API REST en manipulant votre base de données avec mongoose.
+### Ce que vous visez
 
-    PS : n'oubliez pas de commenter votre code avant de le soumettre.
+Dans ce point de contrôle, vous exécuterez une série d'instructions guidées pour créer une API REST en manipulant votre base de données avec mongoose.
 
-B-  Instructions
+* PS : n'oubliez pas de commenter votre code avant de le soumettre.
 
-    1-  Démarrer un nouveau projet Node JS avec ' npm init '
+### Instructions
 
-    2-  Installez la mangouste et express et .env
+1. Démarrer un nouveau projet Node JS avec ' npm init '
+2. Installez la mangouste et express et .env
+3. Configurer les variables d’environnement avec .env
+4. Lancer un serveur avec express dans le fichier server.js
+5. Connectez votre base de données localement ou avec mongo atlas
+6. La structure du dossier devrait être comme ceci :
 
-    3-  Configurer les variables d’environnement avec .env
+config/.env 
 
-    4-  Lancer un serveur avec express dans le fichier server.js
+Serveur.js
 
-    5-  Connectez votre base de données localement ou avec mongo atlas
+     7. Créez un dossier de modèles et un fichier User.js dedans 
 
-    6-  La structure du dossier devrait être comme ceci :
+     8. Dans User.js, vous devez définir un schéma mongoose et exporter le modèle, vous l'utiliserez dans le server.js
 
-        config/.env 
+     9. La structure du dossier doit être comme ceci : 
 
-        Serveur.js
+config/.env 
 
-    7-  Créez un dossier de modèles et un fichier User.js dedans 
+modèles/User.js
 
-    8-  Dans User.js, vous devez définir un schéma mongoose et exporter le modèle, vous l'utiliserez dans le server.js
+Serveur.js
 
-    9-  La structure du dossier doit être comme ceci : 
+     10. Dans le server.js créez quatre routes : 
 
-        config/.env 
+       OBTENIR : RETOURNER TOUS LES UTILISATEURS 
 
-        modèles/User.js
+       POSTE : AJOUTER UN NOUVEL UTILISATEUR À LA BASE DE DONNÉES 
 
-        Serveur.js
+       PUT : MODIFIER UN UTILISATEUR PAR ID 
 
-    10- Dans le server.js créez quatre routes : 
+       SUPPRIMER : SUPPRIMER UN UTILISATEUR PAR ID 
 
-       OBTENIR : RETOURNER TOUS LES UTILISATEURS 
+**NB :** dans chaque fonction de rappel, vous utiliserez des méthodes mongoose pour manipuler vos données et les renvoyer dans la réponse 
 
-       POSTE : AJOUTER UN NOUVEL UTILISATEUR À LA BASE DE DONNÉES 
+     11. Utilisez le facteur pour tester chaque itinéraire.
 
-       PUT : MODIFIER UN UTILISATEUR PAR ID 
+**  Liens utiles : **
 
-       SUPPRIMER : SUPPRIMER UN UTILISATEUR PAR ID 
-
-NB : dans chaque fonction de rappel, vous utiliserez des méthodes mongoose pour manipuler vos données et les renvoyer dans la réponse 
-
-    11- Utilisez le facteur pour tester chaque itinéraire.
-
-                 
-
-  Liens utiles : 
-
-    1-  .env : https://www.npmjs.com/package/dotenv
-    2-  Express js : https://expressjs.com/
-    3-  Req.params et req.query : https://coursework.vschool.io/express-params-and-query/
-    4-  Mangouste : https://mongoosejs.com/
-    5-  API REST : https://www.youtube.com/watch?v=SLwpqD8n3d0
+1. .env : [https://www.npmjs.com/package/dotenv](https://www.npmjs.com/package/dotenv)
+2. Express js : [https://expressjs.com/](https://expressjs.com/)
+3. Req.params et req.query : [https://coursework.vschool.io/express-params-and-query/](https://coursework.vschool.io/express-params-and-query/)
+4. Mangouste : [https://mongoosejs.com/](https://mongoosejs.com/)
+5. API REST : [https://www.youtube.com/watch?v=SLwpqD8n3d0](https://www.youtube.com/watch?v=SLwpqD8n3d0)
